@@ -10,25 +10,31 @@ function createRandomArray(arraySize) {
   return array
 }
 
-function shuffle(sampleArray) {
-  [sampleArray].shuffle
+function shuffling(sampleArray) {
+  return sampleArray.shuffle()
 
+}
+
+function reverse(sampleArray) {
+  return sampleArray.reverse()
 }
 
 function sort(sampleArray){
-  (sampleArray).sort
+  return (sampleArray).sort()
 }
 
-function timingCode() {
+function timingCode(functionTested) {
   var i;
   for (i = 5000; i < 100000; i+= 5000) {
     testingArray = createRandomArray(i)
     var t0 = performance.now();
-    sort(testingArray)
+    functionTested(testingArray)
     var t1 = performance.now();
 
-    console.log("sort for " + i + " took ; " + (t1 - t0) + " millisecond")}
+    console.log(i + " took : " + (t1 - t0) + " millisecond")}
 }
 
-timingCode()
+// timingCode(sort)
 // console.log(createRandomArray(10000));
+
+console.log(reverse([2,5,1,6,3,9,2,6,9]))
