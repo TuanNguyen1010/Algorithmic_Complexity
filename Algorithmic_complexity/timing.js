@@ -15,8 +15,13 @@ function shuffling(sampleArray) {
 
 }
 
-function reverse(sampleArray) {
-  return sampleArray.reverse()
+function reverse(array){
+  var arr = []
+  
+  for(i = 0; i < array.length; i++) {
+    arr.push(array[(array.length - 1) - i])
+  }
+  return arr
 }
 
 function sort(sampleArray){
@@ -34,7 +39,5 @@ function timingCode(functionTested) {
     console.log(i + " took : " + (t1 - t0) + " millisecond")}
 }
 
-// timingCode(sort)
+timingCode(reverse)
 // console.log(createRandomArray(10000));
-
-console.log(reverse([2,5,1,6,3,9,2,6,9]))
