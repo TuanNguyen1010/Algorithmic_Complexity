@@ -10,5 +10,10 @@ describe("reverse", function () {
     expect(reverse([1,2,3,4,5])).toEqual([5,4,3,2,1])
 
   })
-
 });
+
+describe("sort", function() {
+  it("sort out the array from lowest to highest", function() {
+  expect(sort([7,1,3,9,3])).toEqual([1,3,3,7,9])
+  })
+})
