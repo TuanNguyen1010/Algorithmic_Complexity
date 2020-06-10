@@ -11,16 +11,7 @@
 ## Timing
 Using the perfomance.now function in Javascript to time the running time for arrays of difference sizes.
 
-> function runCodeTimer(functionTested) {
->  var i;
->  for (i = 0; i < 100001; i+= 5000) {
->    testingArray = createRandomArray(i)
->    var t0 = performance.now()
->    functionTested(testingArray)
->    lastItem()
->    var t1 = performance.now()
->    console.log(i + " took : " + (t1 - t0) + " milliseond")}
->   }
+![timing](images/timing-code.png)
 
 ### Timing for default metthod
 
