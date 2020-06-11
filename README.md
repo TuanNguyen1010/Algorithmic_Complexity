@@ -18,3 +18,8 @@ Using the perfomance.now function in Javascript to time the running time for arr
 #### Last elemment on the array ( testingArray[testingArray.length-1])
 
 ![last-element](images/last-item.png)
+
+#### Reverse array ( testingArray.reverse())
+
+![reverse](images/reverse-sort.png)
+
