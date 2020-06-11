@@ -15,3 +15,6 @@ Using the perfomance.now function in Javascript to time the running time for arr
 
 ### Timing for default metthod
 
+#### Last elemment on the array ( testingArray[testingArray.length-1])
+
+![last-element](images/last-item.png)
