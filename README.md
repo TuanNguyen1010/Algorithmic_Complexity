@@ -11,7 +11,7 @@
 ## Timing
 Using the perfomance.now function in Javascript to time the running time for arrays of difference sizes.
 
-![timing](images/timing-code.png)
+![code-timer](images/code-timer.png)
 
 ### Timing for default metthod
 
