@@ -52,7 +52,7 @@ function runCodeTimer(functionTested) {
   for (i = 0; i < 100001; i+= 5000) {
     testingArray = createRandomArray(i)
     var t0 = performance.now()
-    testingArray.reverse()
+    functionTested(testingArray)
     var t1 = performance.now()
     console.log(i + " took : " + (t1 - t0) + " millisecond")}
 }
