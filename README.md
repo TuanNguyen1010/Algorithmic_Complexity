@@ -23,3 +23,7 @@ Using the perfomance.now function in Javascript to time the running time for arr
 
 ![reverse](images/reverse-sort.png)
 
+#### Shuffle array (testingArray.sort(() => Math.random() - 0.5))
+
+![shuffle](images/shuffle-sort.png)
+
