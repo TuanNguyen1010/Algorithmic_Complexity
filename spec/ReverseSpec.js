@@ -2,6 +2,10 @@
 
 describe("reverse", function () {
 
+  it('returns an empty array', function() {
+    expect(reverse([])).toEqual([])
+  })
+
   it("reverse the order of the array", function() {
     expect(reverse([2, 6, 5, 1, 5])).toEqual([5, 1, 5, 6, 2])
   })
@@ -12,8 +16,8 @@ describe("reverse", function () {
   })
 });
 
-describe("sort", function() {
-  it("sort out the array from lowest to highest", function() {
-  expect(sort([7,1,3,9,3])).toEqual([1,3,3,7,9])
-  })
-})
+// describe("sort", function() {
+//   it("sort out the array from lowest to highest", function() {
+//   expect(sort([7,1,3,9,3])).toEqual([1,3,3,7,9])
+//   })
+// })

@@ -14,25 +14,18 @@ function shuffling(sampleArray) {
 
 }
 
-function reverse(array){
-  var arr = []
-  for(i = 0; i < array.length; i++) {
-    arr.push(array[(array.length - 1) - i])
-  }
-  return arr
-}
 
-function sort(array){
-  for(index = 0; index < array.length; index++) {
-    var item = array[index]
-    for(place = index + 1; place < array.length; place++){
-      if(item > array[place]) {
-        [input[index], array[place]]
-        item = array[index]
-      }
-    }
-  }
-}
+// function sort(array){
+//   for(index = 0; index < array.length; index++) {
+//     var item = array[index]
+//     for(place = index + 1; place < array.length; place++){
+//       if(item > array[place]) {
+//         [input[index], array[place]]
+//         item = array[index]
+//       }
+//     }
+//   }
+// }
 
 // function selectionSort(input) {
 //   for(let index = 0; index < input.length; index++) {
@@ -52,10 +45,9 @@ function runCodeTimer(functionTested) {
   for (i = 0; i < 100001; i+= 5000) {
     testingArray = createRandomArray(i)
     var t0 = performance.now()
-    // functionTested(testingArray)
-    testingArray.sort()
+    functionTested(testingArray)
     var t1 = performance.now()
     console.log(i + " took : " + (t1 - t0) + " millisecond")}
 }
 
-runCodeTimer()
+module.exports = runCodeTimer
